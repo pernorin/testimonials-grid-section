@@ -31,7 +31,7 @@ p {
 main {
 	margin: 70px 20px;
 	display: grid;
-	gap: 20px;
+	gap: 25px;
 	justify-items: center;
 }
 .card {
@@ -67,22 +67,20 @@ main {
 	background-color: hsl(263, 55%, 52%);
 	color: hsl(0, 0%, 100%);
 	position: relative;
+	/* max-width: 670px; */
 }
 #two {
 	background-color: hsl(217, 19%, 35%);
 	color: hsl(0, 0%, 100%);
 }
-#three {
+#three,
+#five {
 	background-color: hsl(0, 0%, 100%);
 	color: hsl(217, 19%, 35%);
 }
 #four {
 	background-color: hsl(219, 29%, 14%);
 	color: hsl(0, 0%, 100%);
-}
-#five {
-	background-color: hsl(0, 0%, 100%);
-	color: hsl(217, 19%, 35%);
 }
 
 .verified {
@@ -98,3 +96,30 @@ main {
 	top: 0;
 	right: 25px;
 }
+@media only screen and (min-width: 1190px) {
+	main {
+		grid-template-areas: 'item1 item1 item2 item5' 'item3 item4 item4 item5';
+		max-width: 1150px;
+		margin: 130px auto;
+	}
+	.card {
+		max-width: 275px;
+	}
+	#one {
+		max-width: 560px;
+		grid-area: item1;
+	}
+	#two {
+		grid-area: item2;
+	}
+	#three {
+		grid-area: item3;
+	}
+	#four {
+		grid-area: item4;
+		max-width: 550px;
+	}
+	#five {
+		grid-area: item5;
+	}
+} ;

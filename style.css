@@ -17,9 +17,84 @@ font-family: 'Barlow Semi Condensed', sans-serif;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Barlow Semi Condensed', sans-serif;
-	font-weight: 500;
 }
 body {
 	background-color: hsl(210, 46%, 95%);
+}
+p {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 500;
+	font-size: 0.8125rem;
+	position: relative;
+	z-index: 1;
+}
+main {
+	margin: 70px 20px;
+	display: grid;
+	gap: 20px;
+	justify-items: center;
+}
+.card {
+	border-radius: 10px;
+	padding: 30px;
+	max-width: 335px;
+}
+.card-header {
+	display: flex;
+	margin-bottom: 10px;
+}
+.card-header img {
+	border-radius: 50%;
+	height: 35px;
+}
+.card-header div {
+	margin: 2px 15px;
+}
+.card-header .name {
+	/* font-size: 1rem; */
+	font-weight: 600;
+}
+.img-border {
+	border: 2px solid hsl(264, 82%, 70%);
+}
+.lead {
+	font-weight: 600;
+	font-size: 1.3rem;
+	margin: 20px 0;
+}
+
+#one {
+	background-color: hsl(263, 55%, 52%);
+	color: hsl(0, 0%, 100%);
+	position: relative;
+}
+#two {
+	background-color: hsl(217, 19%, 35%);
+	color: hsl(0, 0%, 100%);
+}
+#three {
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(217, 19%, 35%);
+}
+#four {
+	background-color: hsl(219, 29%, 14%);
+	color: hsl(0, 0%, 100%);
+}
+#five {
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(217, 19%, 35%);
+}
+
+.verified {
+	opacity: 0.5;
+}
+.quote {
+	opacity: 0.7;
+	line-height: 1.4;
+}
+.quotation-img {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	right: 25px;
 }

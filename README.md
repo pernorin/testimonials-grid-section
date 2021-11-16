@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/testimonials-with-css-grid-pepV8WLHw)
 - [Live Site](https://pernorin.github.io/testimonials-grid-section/)
 
 ## My process
